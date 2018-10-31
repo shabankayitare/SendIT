@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SendIT web  application</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="initial-scale=1.0">
+     <meta name="description" content="service on delivery">
+     <meta name="keywords" content=" delivery service on">
+     <meta name="Author" content="Kay shaban">
+     <link rel="stylesheet" href="css/profiling.css">
+   </head>
+     <body>
+
+     		<header>
+     		<div class="container">
+     			<div  id="branding">
+     				<h1><span class="highlight">SendIT </span><h1>
+
+     			</div>
+     			<nav>
+     				<ul>
+     					<li class="current"><a href="index.html">Home</a></li>
+     					<li><a href="about.html">About Us</a></li>
+     					<li><a href="about.html">notification</a></li>
+     					<li><a href="about.html">logout</a></li>
+     						</ul>
+
+     			 </nav>
+
+
+     		</div>
+
+
+     	</header>
+
+     	<div class="tab">
+  <button class="tablinks" onclick="openContent('orders')">My orders</button>
+  <button class="tablinks" onclick="openContent('profile')">profile</button>
+  <button class="tablinks" onclick="openContent('contact')">contact</button>
+</div>
+
+	<div class="container">
+	<div class="login-page">
+        <div class="form">
+	<div id="orders" class="tabcontent">
+		<div class="parcel-page">
+			<div class="parcel-form" style="background:#cc9900">
+       	 	<br>
+
+       	 	<p >this is orders</p>
+<br>
+        </div>    </div>
+        <div id="map"></div>
+	</div>
+
+	<div id="profile" class="tabcontent">
+<br><br>
+<p>this is profile</p>
+<br>
+	</div>
+	<div id="contact" class="tabcontent">
+<br><br>
+<p>this is contact</p>
+<br>
+	</div>
+              </div>
+          </div>
+</div>
+
+
+<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script 
+    async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFQcURV7AW3ESYSmFWCNaMi6uT6QEltVQ&callback=initMap"></script>
+
+		<script type="text/javascript">
+
+		function openContent(name){
+			document.getElementById("orders").style.display = "none";
+			document.getElementById("profile").style.display = "none";
+			document.getElementById("contact").style.display = "none";
+			document.getElementById(name).style.display = "block";
+
+		}
+		</script>
+
+     	 </body>
+
+</html>
