@@ -1,0 +1,341 @@
+body{
+	font:15px/1.5 Arial,helvetica, sans-serif; 
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+/*global page*/
+.container{
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+     ul{
+      	margin: 0;
+      	padding: 0;
+      }
+
+      .button_1{
+      	height: 38px;
+      	background:#e8491d;
+      	border: 0; 
+      	padding-left: 20px;
+      	padding-right: 20px;
+      	color: #ffffff;
+
+      }
+
+/*header*/
+header{
+	background-color: #35424a;
+	color: #ffffff;
+	padding-top:30px;
+	min-height: 70px;
+	border-bottom: #e8491d;
+}
+
+      header a{
+      	color: #ffffff;
+      	text-decoration: none;
+      	text-transform: uppercase;
+      	font-size: 16px;
+      }
+
+     
+
+      header li{
+      	float: left;
+      	display: inline;
+      	padding: 0 20px 0 20px; 
+
+      }
+
+      header #branding{
+      	 float: left;
+      }
+
+      header #branding{
+      	margin: 0;
+      }
+
+      header nav{
+      	float: right;
+      	margin-top: 10px;
+      }
+
+      header .highlight, header .current a{
+      	color: #e8491d;
+      	font-weight:bold;
+      }
+
+      header a:hover{
+      	color: #cccccc;
+      	font-weight: bold;
+      }
+
+      /*showcase*/
+
+      #showcase{
+      
+
+      	min-height: 400px;
+      	background: url('../img/showcase.jpg'); 
+      	text-align: center;
+      	color: #ffffff;
+      }
+
+      #showcase h1{
+      	margin-top: 100px;
+      	font-size: 55px;
+      	margin-bottom: 10px;
+      }
+
+      #showcase p{
+      	font-size: 20px;
+      }
+      #newsletter{
+      	padding: 15px;
+      	color:#ffffff;
+      	background-color: #35424a;
+
+      }
+      #newsletter h1{
+      	float: left;
+      }
+
+      #newsletter form{
+      	float: right;
+      	margin-top: 15px;
+      }
+
+      #newsletter input[type="email"]{
+      	padding: 4px;
+      	height: 25px;
+      	width: 250px;
+      }
+
+
+
+  
+
+      /* sign up form 
+      .signing{
+      	padding: 5px;
+      	margin-left: 20%;
+      	margin-right: 20%;
+      }
+
+      .tab-content{
+      	display: inline-block;
+      	
+      }
+      #signup {
+      	width: 100%;
+
+      }
+      .tab-content{
+      	margin-left: 20%;
+      } */
+
+      body{
+            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/showcase.jpg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+      }
+
+      .login-page{
+            width: 100%;
+      }
+
+      .form{
+            position: relative;
+            z-index: 1;
+            background: #ffffff;
+            /*max-width: 360px;
+            margin: 0 auto 100px;*/
+            padding: 20px;
+            text-align: center;
+
+      }
+      
+      .form input{
+            font-family: "Roboto", sans-serif;
+           /* outline: 1;
+            background: #f2f2f2;
+            width: 100%;*/
+            border: 0;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px,
+      }
+
+      .form button{
+            font-family: "Roboto",sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #4CAF50;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 14px;
+            cursor: pointer;
+      }
+
+      .form button:hover{
+            color: #4CAF50;
+            background: #43A047;
+      }
+
+      .form button:active{
+            background: #4CAF50;
+      }
+
+      .form .message{
+            margin: 15px 0 0;
+            color: black;
+            font-size: 12px;
+      }
+
+      .form .message a{
+            color:#4CAF50;
+            text-decoration: none;
+      }
+
+      .ikos{
+            display: none;
+      }
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+#orders{
+      display: block;
+}
+
+#profile{
+      display: none;
+}
+
+#contact{
+      display: none;
+}
+
+.insidecontainer{
+      float: left;
+      width: 30%;
+      margin: auto;
+      overflow: hidden;
+      height: auto;
+      line-height: auto;
+}
+
+      .parcel-page{
+            width: 40%;
+            height: auto;
+            line-height: auto;
+      }
+
+      .parcel-form{
+            position: relative;
+
+      } 
+
+ #map {
+      position: relative;
+    height: 200px;
+    width: 40%;
+  }
+
+  .delivery1{
+      position: relative;
+        width: 25%;
+
+  }
+
+  .button2{
+      margin-bottom: 30px;
+      margin-left: 150px;
+
+  }
+   #right-panel {
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+
+      #right-panel select, #right-panel input {
+        font-size: 15px;
+      }
+
+      #right-panel select {
+        width: 100%;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+      }
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map1 {
+        height: 100%;
+        float: left;
+        width: 70%;
+        height: 100%;
+      }
+      #right-panel {
+        margin: 20px;
+        border-width: 2px;
+        width: 20%;
+        height: 400px;
+        float: left;
+        text-align: left;
+        padding-top: 0;
+      }
+      #directions-panel {
+        margin-top: 10px;
+        background-color: #FFEE77;
+        padding: 10px;
+        overflow: scroll;
+        height: 174px;
+      }
+footer{
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #e8491d;
+            text-align: center;
+      }
+
+
