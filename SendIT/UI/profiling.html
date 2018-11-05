@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SendIT web  application</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta name="description" content="service on delivery">
+     <meta name="keywords" content=" delivery service on">
+     <meta name="Author" content="Kay shaban">
+     <link rel="stylesheet" href="css/profiling.css">
+     
+   <style>
+   #map{
+    height: 300px;
+   }
+
+   </style>
+   </head>
+    <body>
+
+     		<header>
+     		<div class="container">
+     			<div  id="branding">
+     				<h1><span class="highlight">SendIT </span><h1>
+
+     			</div>
+     			<nav>
+     				<ul>
+     					<li class="current"><a href="index.html">Home</a></li>
+     					<li><a href="locations.html">pick-up and destination</a></li>
+     					<li><a href="about.html">notification</a></li>
+     					<li><a href="about.html">logout</a></li>
+     						</ul>
+
+     			 </nav>
+
+
+     		</div>
+
+
+     	</header>
+
+     	<div class="tab">
+   <button class="tablinks" onclick="openContent('create')">create derivery order</button>     
+  <button class="tablinks" onclick="openContent('orders')">track my parcel</button>
+  <button class="tablinks" onclick="openContent('profile')">profile</button>
+  <button class="tablinks" onclick="openContent('contact')">parcels details</button>
+</div>
+
+	<div class="container">
+	<div class="login-page">
+        <div class="form" style="background:#cc9900">
+
+          <div id="create" class="tabcontent">
+<p><strong> create your delivery order</strong></p>
+<div class="delivery1">
+  <form method="post" action="#">
+
+<input type="text" placeholder="names of delivery picker">
+
+<input type="text" placeholder="delivery term">
+
+ <input type="text" placeholder="set your address(city and street)">
+
+<input type="text" placeholder="set your delivery place">
+
+<input type="text" placeholder="set date">
+
+<input type="text" placeholder="set your delivery date">
+
+<label>category:</label>
+<input type="number" value=1><span>Kg</span>
+<button type="submit" class="button2">submit your delivery</button>
+<button type="submit" class="button3">see delivery details</button>
+<button type="submit" class="button4">change parcel destination</button>
+<button type="submit" class="button5">cancel a parcel delivery order</button>
+
+  </form>
+</div>
+<br>
+  </div>
+	<div id="orders" class="tabcontent">
+		<div class="parcel-page">
+			<div class="parcel-form" style="background:#cc9900">
+       	 	<br>
+
+       	 	<p >track my parcel</p>
+<br>
+        </div>    </div>
+        <div id="map"></div>
+	</div>
+
+	<div id="profile" class="tabcontent">
+<br><br>
+<p>this is profile</p>
+<br>
+	</div>
+	<div id="contact" class="tabcontent">
+<br><br>
+<p>this is parcel details</p>
+<br>
+	</div>
+  
+              </div>
+          </div>
+</div>
+<footer>
+               <p>SendIT Web App copyright &copy; 2018 powered   by Kay shaban  </p>
+          </footer>
+
+
+  <script>
+      var map ;
+      function initMap() {
+        var kigali= {lat: -1.9706, lng: 30.1044};
+        map = new google.maps.Map(document.getElementById('map'), { zoom: 13, center: kigali});
+          var marker = new google.maps.Marker({position: kigali, map: map});
+
+
+ addMarker({lat:-2.4757,lng:28.9179});
+ addMarker({lat:-2.2072,lng:30.1445});
+ addMarker({lat:-2.6078,lng:29.7368});
+          function addMarker(coords){
+             marker= new google.maps.Marker({
+              position:coords,
+              map:map,
+            });
+          }
+
+          google.maps.Map.addListener(map, 'click' , function(event){
+            addMarker({coords:event.latLng});
+          });
+
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtVKFT-UV_7_WmaBEb74axXFibeyv212g&callback=initMap"
+    async defer></script>
+		<script type="text/javascript">
+
+
+  		function openContent(name){
+  			document.getElementById("orders").style.display = "none";
+  			document.getElementById("profile").style.display = "none";
+  			document.getElementById("contact").style.display = "none";
+        document.getElementById("create").style.display = "none";
+  			document.getElementById(name).style.display = "block";
+
+
+
+
+  		}
+		</script>
+
+
+     	 </body>
+
+</html>

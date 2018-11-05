@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SendIT web  application</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="service on delivery">
+	<meta name="keywords" content=" delivery service on">
+	<meta name="Author" content="Kay shaban">
+	<link rel="stylesheet" href="css/main.css">
+     </head>
+     <body>
+     	<header>
+     		<div class="container">
+     			<div  id="branding">
+     				<h1><span class="highlight">SendIT </span><h1>
+
+     			</div>
+     			<nav>
+     				<ul>
+     					<li class="current"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              
+     						</ul>
+
+     			 </nav>
+
+
+     		</div>
+
+
+     	</header>
+
+      <div class="login-page">
+        <div class="form">
+          <div class="ikos" id="hiddenform">
+          <form class="register-form">
+            <input id="pop1" type="text" placeholder="name" />
+            <input id="pop1" type="text" placeholder="password" />
+            <input id="pop1" type="text" placeholder="email id" />
+            <button>create</button>
+            <p class="message">Already Registered? <a href="#" onclick='return login()'>Login</a></p>
+
+          </form>
+        </div>
+            <div id="loginform">
+                <form class="login-form">
+                  <input id="pop2" type="text" placeholder="Username"/>
+                  <input id="pop2" type="text" placeholder="Password"/>
+                  <button>Login</button>
+                  <p class="message">Already Registered? <a href="#" onclick='return register()'>Register</a></p>
+
+                </form>
+              </div>
+
+        </div>
+      </div>
+
+
+               
+
+
+     	<footer>
+               <p>SendIT Web App copyright &copy; 2018 powered   by Kay shaban  </p>
+          </footer>
+
+
+
+
+<script type="text/javascript">
+function register(){
+  document.getElementById("hiddenform").style.display ="block";
+  document.getElementById("loginform").style.display ="none";
+}
+function login(){
+  document.getElementById("hiddenform").style.display ="none";
+  document.getElementById("loginform").style.display ="block";
+}
+
+</script>
+     </body>
+     
+
+</html>
+
+
