@@ -31,7 +31,7 @@ header{
 	color: #ffffff;
 	padding-top:30px;
 	min-height: 70px;
-	border-bottom: #e8491d;
+	border-bottom: #e8491d 3px solid;
 }
 
       header a{
@@ -41,6 +41,7 @@ header{
       	font-size: 16px;
       }
 
+      
      
 
       header li{
@@ -54,7 +55,7 @@ header{
       	 float: left;
       }
 
-      header #branding{
+      header #branding h1{
       	margin: 0;
       }
 
@@ -114,34 +115,43 @@ header{
       	width: 250px;
       }
 
+      #boxes{
+            margin-top: 20px;
+      }
+
+      #boxes .box{
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+      }
+      #boxes .box img{
+            width: 90px;
+      }
+
+      footer{
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #e8491d;
+            text-align: center;
+      }
+
 
 
   
 
-      /* sign up form 
-      .signing{
-      	padding: 5px;
-      	margin-left: 20%;
-      	margin-right: 20%;
-      }
+     
 
-      .tab-content{
-      	display: inline-block;
-      	
-      }
-      #signup {
-      	width: 100%;
-
-      }
-      .tab-content{
-      	margin-left: 20%;
-      } */
-
-      body{
-            background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/showcase.jpg');
-            height: 100vh;
+      body{ 
+           /* background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/showcase.jpg');*/
+            height: 100%;
+            width:100%;
+            background-repeat:no-repeat;
             background-size: cover;
             background-position: center;
+             background-attachment: fixed;
+             background-color: #808080;
       }
 
       .login-page{
