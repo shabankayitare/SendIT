@@ -1,0 +1,18 @@
+{
+  "name": "kayita",
+  "version": "1.0.0",
+  "description": "A demo package for SendIT project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SendIT",
+    "project"
+  ],
+  "author": "Kay from Andela User <shabankayitare@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
