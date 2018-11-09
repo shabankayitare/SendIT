@@ -34,7 +34,7 @@ exports.create = function(req, res) {
  
 exports.findAll = function(req, res) {
     console.log("--->Find All: \n" + JSON.stringify(parcels, null, 4));
-    res.end("All Customers: \n" + JSON.stringify(parcels, null, 4));  
+    res.end("All parcels: \n" + JSON.stringify(parcels, null, 4));  
 };
  
 exports.findOne = function(req, res) {
